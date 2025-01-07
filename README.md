@@ -64,7 +64,7 @@ python manage.py runserver
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/users/create/` | Create a new user account |
+| POST | `/users/register/` | Create a new user account |
 | POST | `/users/token/` | Obtain JWT token pair |
 | GET | `/users/protected/` | Test protected endpoint |
 
@@ -74,7 +74,7 @@ python manage.py runserver
 |--------|----------|-------------|
 | GET | `/books/` | List all books |
 | POST | `/books/` | Create a new book |
-| GET | `//books/{id}/` | Retrieve a specific book |
+| GET | `/books/{id}/` | Retrieve a specific book |
 | PUT | `/books/{id}/` | Update a specific book |
 | DELETE | `/books/{id}/` | Delete a specific book |
 
