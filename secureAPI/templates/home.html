@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{ title }}</title>
+		<style>
+			/* Global Styles */
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background-color: #f0f2f5;
+				color: #333;
+				margin: 0;
+				padding: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+
+			/* Container */
+			.container {
+				background-color: #ffffff;
+				border-radius: 8px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+				max-width: 800px;
+				width: 100%;
+			}
+
+			/* Header Styles */
+			h1 {
+				color: #0044cc;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			p {
+				text-align: center;
+				font-size: 18px;
+				color: #555;
+			}
+
+			h2 {
+				margin-top: 20px;
+				color: #222;
+				border-bottom: 2px solid #e0e0e0;
+				padding-bottom: 5px;
+			}
+
+			/* List Styles */
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			li {
+				background-color: #f9f9f9;
+				margin: 10px 0;
+				padding: 15px;
+				border-radius: 6px;
+				border: 1px solid #e0e0e0;
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+
+			li:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			}
+
+			/* Endpoint Styles */
+			.endpoint {
+				font-weight: bold;
+				color: #333;
+				font-size: 16px;
+			}
+
+			code {
+				background-color: #e8f0fe;
+				padding: 2px 5px;
+				border-radius: 4px;
+				font-family: 'Courier New', Courier, monospace;
+			}
+
+			/* Responsive Design */
+			@media (max-width: 600px) {
+				body {
+					padding: 10px;
+				}
+
+				.container {
+					padding: 15px;
+				}
+
+				h1 {
+					font-size: 24px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>{{ title }}</h1>
+			<p>{{ description }}</p>
+
+			<h2>Available Endpoints:</h2>
+			<ul>
+				{% for endpoint in available_endpoints %}
+				<li>
+					<span class="endpoint">{{ endpoint.name }}</span><br />
+					<span>Endpoint: <code>{{ endpoint.endpoint }}</code></span
+					><br />
+					<span>Method: {{ endpoint.method }}</span>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>
