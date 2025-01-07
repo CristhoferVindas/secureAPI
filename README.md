@@ -200,7 +200,7 @@ Authorization: Bearer <your_access_token>
 
 ## ✍️ Authors
 
-* **Cristhofer Vindas ** - *Initial work* - [YourUsername](https://github.com/yourusername)
+* **Cristhofer Vindas ** - [Github](https://github.com/CristhoferVindas)
 
 ## 🙏 Acknowledgments
 
