@@ -91,7 +91,7 @@ python manage.py runserver
 ## 📖 API Usage Examples (Postman)
 
 ### User Registration
-**Endpoint:** `POST http://localhost:8000/api/users/create/`
+**Endpoint:** `POST http://localhost:8000/users/register/`
   
 **Headers:**
 ```
@@ -108,7 +108,7 @@ Content-Type: application/json
 ```
 
 ### Obtaining JWT Token
-**Endpoint:** `POST http://localhost:8000/api/token/`
+**Endpoint:** `POST http://localhost:8000/users/token/`
 
 **Headers:**
 ```
@@ -132,7 +132,7 @@ Content-Type: application/json
 ```
 
 ### Creating a Book
-**Endpoint:** `POST http://localhost:8000/api/books/`
+**Endpoint:** `POST http://localhost:8000/books/`
 
 **Headers:**
 ```
@@ -152,7 +152,7 @@ Content-Type: application/json
 ```
 
 ### Get All Books
-**Endpoint:** `GET http://localhost:8000/api/books/`
+**Endpoint:** `GET http://localhost:8000/books/`
 
 **Headers:**
 ```
@@ -160,7 +160,7 @@ Authorization: Bearer <your_access_token>
 ```
 
 ### Get Single Book
-**Endpoint:** `GET http://localhost:8000/api/books/1/`
+**Endpoint:** `GET http://localhost:8000/books/1/`
 
 **Headers:**
 ```
@@ -168,7 +168,7 @@ Authorization: Bearer <your_access_token>
 ```
 
 ### Update Book
-**Endpoint:** `PUT http://localhost:8000/api/books/1/`
+**Endpoint:** `PUT http://localhost:8000/books/1/`
 
 **Headers:**
 ```
@@ -188,7 +188,7 @@ Content-Type: application/json
 ```
 
 ### Delete Book
-**Endpoint:** `DELETE http://localhost:8000/api/books/1/`
+**Endpoint:** `DELETE http://localhost:8000/books/1/`
 
 **Headers:**
 ```
